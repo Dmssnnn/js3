@@ -1,6 +1,4 @@
 
-
-
 const welcomeSection = document.createElement("section");
 const container = document.createElement("div");
 
@@ -72,6 +70,8 @@ buttonsDivQuoteButton.style.padding = "15px, 40px, 15px, 40px"
 buttonsDivQuoteButton.style.borderRadius = "5px"
 buttonsDivQuoteButton.style.border = "1px solid"
 buttonsDivQuoteButton.style.borderColor = "#23A6F0"
+buttonsDivQuoteButton.style.transition = "background-color 0.3s, color 0.3s";
+
 
 const buttonsDivLearnMoreButton = buttonsDiv.querySelector(".button2")
 buttonsDivLearnMoreButton.style.width = "164px"
@@ -83,6 +83,7 @@ buttonsDivLearnMoreButton.style.padding = "15px, 40px, 15px, 40px"
 buttonsDivLearnMoreButton.style.borderRadius = "5px"
 buttonsDivLearnMoreButton.style.border = "1px solid"
 buttonsDivLearnMoreButton.style.borderColor = "#23A6F0"
+buttonsDivLearnMoreButton.style.transition = "background-color 1s, color 0.3s"
 
 
 welcomeDiv.appendChild(buttonsDiv)
@@ -103,6 +104,7 @@ const trainingCoursesBlock = document.createElement("div")
 trainingCoursesBlock.style.height = "200px"
 trainingCoursesBlock.style.backgroundColor = "white";
 trainingCoursesBlock.style.padding = "2.5%"
+trainingCoursesBlock.style.transition = "background-color 0.3s, color 0.3s";
 trainingCoursesBlock.innerHTML  = `
 <img src="images/smile.svg" alt="smily">
 <h5>training Courses</h5>
@@ -130,6 +132,7 @@ const onlineCoursesBlock = document.createElement("div")
 onlineCoursesBlock.style.height = "200px"
 onlineCoursesBlock.style.backgroundColor = "white";
 onlineCoursesBlock.style.padding = "2.5%";
+onlineCoursesBlock.style.transition = "background-color 1s, color 0.3s";
 onlineCoursesBlock.innerHTML =  `
 <img src="images/correctLogo.svg" alt="correctLogo">
 <h5>2,769 online courses</h5>
@@ -164,6 +167,7 @@ small-scale behaviour...</p>
 cardCoursesBlock.style.height = "200px"
 cardCoursesBlock.style.backgroundColor = "#FFFF";
 cardCoursesBlock.style.padding = "2.5%";
+buttonsDivQuoteButton.style.transition = "background-color 1s, color 0.3s";
 
 
 const cardCoursesImg = cardCoursesBlock.querySelector("img")
@@ -312,6 +316,7 @@ function changeCardCoursesBlockColor () {
     cardCoursesBlock.addEventListener("mouseenter" , () => {
     cardCoursesBlock.style.color = "#FFFF"
     cardCoursesBlock.style.backgroundColor ="#23A6F0"
+    cardCoursesBlock.style.transition = "all 0.3s"
 })
 
     cardCoursesBlock.addEventListener("mouseleave" , () => {
