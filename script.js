@@ -176,7 +176,7 @@ cardCoursesImg.style
 
 const cardCourseTitle = cardCoursesBlock.querySelector("h5")
 cardCourseTitle.style.fontSize = "16px"
-cardCourseTitle.style.color = "#FFFFFF"
+cardCourseTitle.style.color = "black"
 cardCourseTitle.style.fontWeight = "700"
 
 const cardCoursePara = cardCoursesBlock.querySelector("p")
@@ -285,10 +285,12 @@ changeLearnMoreButtonCollor()
 function changeTrainingCoursesColor () {
     trainingCoursesBlock.addEventListener("mouseenter" , () => {
         trainingCoursesBlock.style.color = "#FFFF"
+        trainingBlockTitle.style.color = "#FFFF"
         trainingCoursesBlock.style.backgroundColor ="#23A6F0"
     })
 
     trainingCoursesBlock.addEventListener("mouseleave" , () => {
+        trainingBlockTitle.style.color = "black"
         trainingCoursesBlock.style.color = "#23A6F0"
         trainingCoursesBlock.style.backgroundColor ="#FFFF"
     })
@@ -299,10 +301,12 @@ changeTrainingCoursesColor()
 function changeOnlineCoursesBlockColor () {
         onlineCoursesBlock.addEventListener("mouseenter" , () => {
         onlineCoursesBlock.style.color = "#FFFF"
+        onlineCourseTitle.style.color = "#FFFF"
         onlineCoursesBlock.style.backgroundColor ="#23A6F0"
     })
 
     onlineCoursesBlock.addEventListener("mouseleave" , () => {
+        onlineCourseTitle.style.color = "black"
         onlineCoursesBlock.style.color = "#23A6F0"
         onlineCoursesBlock.style.backgroundColor ="#FFFF"
     })
@@ -315,12 +319,14 @@ changeOnlineCoursesBlockColor ()
 function changeCardCoursesBlockColor () {
     cardCoursesBlock.addEventListener("mouseenter" , () => {
     cardCoursesBlock.style.color = "#FFFF"
+    cardCourseTitle.style.color = "white"
     cardCoursesBlock.style.backgroundColor ="#23A6F0"
     cardCoursesBlock.style.transition = "all 0.3s"
 })
 
     cardCoursesBlock.addEventListener("mouseleave" , () => {
     cardCoursesBlock.style.color = "#23A6F0"
+    cardCourseTitle.style.color = "black"
     cardCoursesBlock.style.backgroundColor ="#FFFF"
 })
 }
